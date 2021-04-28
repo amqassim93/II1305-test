@@ -1,0 +1,98 @@
+*{
+    padding:0; 
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 15fr 85fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+#navbar{
+    grid-column: 1/2;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    margin: 1em;
+    row-gap: 1em;
+}
+#rightBox{
+    grid-column: 2/3;
+    
+
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+
+}
+#blankBox{
+    grid-row: 2/3;
+
+}
+#topBox{
+    padding: 2em;
+    padding-top: 3em;
+    grid-row: 1/2;
+}
+
+#buttonJobs{
+    
+    grid-row: 1/2;
+}
+
+#buttonStaff {
+    
+    grid-row: 2/3;
+}
+
+#buttonTimeReport {
+    
+    grid-row: 3/4
+}
+
+#buttonClients {
+    
+    grid-row: 4/5;
+}
+
+#buttonCompletedJobs {
+    
+    grid-row: 5/6;
+}
+
+#buttonVehicles {
+    
+    grid-row: 6/7;
+}
+
+#buttonFuelLog {
+    
+    grid-row: 7/8;
+}
+
+#buttonLogOut {
+    grid-row: 8/9;
+}
+.button{
+    text-align: center;
+
+    background-color: #a3c899;
+    border-radius: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-size:1.5em;
+    place-items: center;
+}
+.button:hover {
+    background-color: #2b4f20;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

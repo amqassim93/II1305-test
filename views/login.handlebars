@@ -1,0 +1,22 @@
+<h1>login ... </h1>
+<form action="/login" method="POST">
+    <label class="sr-only" for="userName">userName</label>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" name="username" value={{username}}>
+    </div>
+
+
+    <label class="sr-only" for="Password">Password</label>
+    <div class="input-group mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-key"></i></span>
+        </div>
+        <input type="password" class="form-control" placeholder="Password" name="password" value={{password}}>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a href="/" class="btn btn-danger"> Cancel </a>
+</form>

@@ -1,0 +1,25 @@
+{{title}}
+
+<h2> Välkommen! <h2>
+{{#each people as |value key|}}
+<p>{{key}}: {{value}}</p>
+{{/each}}
+<hr>
+{{#each user as |value key|}}       <!--value innehåller värdet, key innehåller indexen av värdet i user tupeln/arrayen--->
+<p>{{key}}:{{value}}</p>
+{{/each}}
+<!----->
+<!----->
+<!----->
+<hr>
+{{#each lists}}                     <!-- Nästade for loopar :) --->
+
+    {{#each this.items as |yValue yKey|}}
+    <p>{{yValue}}</p>
+    {{/each}}
+
+    <hr>
+
+{{/each}}
+<p>exited loop</p>
+
