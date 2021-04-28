@@ -1,0 +1,200 @@
+*{
+    padding:0; 
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.colors {
+color: #e1ecde; /*bakgrunds gröna */
+color: #a3c899; /*text grönt*/
+color: #51654b; /*mörkare grön*/
+color: #2b4f20; /*hover färg*/
+color: #0c1311; /*svart med tint*/
+font-family: 'Poppins', sans-serif;
+/*Avenir heavy font som logo*/}
+
+#top-logo{
+    background-color: #e1ecde;
+    text-align: center;
+    font-size: 50px;
+    color: #a3c899;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#title{
+    color: #a3c899;
+    font-size: 5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+#subtitle{
+    color: #51654b;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: -0.5em;
+    line-height:0em;
+}
+
+#bottom-copyright {
+    background-color: #a3c899;
+    font-size: 9px;
+    color: #0c1311;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 12em 1fr 5em;
+    background-image: url("../assets/images/homepage-bg.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid-main-header{
+    grid-column: 1/4;
+    grid-row: 1;
+    color: #a3c899;
+    background-color: #e1ecde;
+    text-align: center;
+
+    line-height: 1em;
+}
+
+.grid-main-body{
+    display: grid;
+    grid-row: 2;                /*do not touch, grid-row = it's the cell itself. grid-template-column is the "children" of the cell*/
+    grid-column: 2;
+
+    /*grid-template-columns: 1fr;
+    grid-template-rows: 5em 4em 4em 6em 4em 0em;
+    grid-gap: 1em;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-main-body > form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+
+}
+
+.text-fields {
+    background-color: #e1ecde;
+    border: none;
+    color: #a3c899;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    width: 15em;
+    text-align: center;
+    line-height: 1em;
+    opacity: 80%;
+    border-radius: 100em;
+}
+
+#loginForm {
+    grid-row: 2;                /*do not touch, grid-row = it's the cell itself. grid-template-column is the "children" of the cell*/
+    grid-column: 2;
+    display: grid;
+    grid-gap: 0.1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5em 4em 4em 6em 4em 0em;
+    /*width: 50em;*/
+
+}
+
+.buttons-freeform {
+    background-color: #a3c899;
+    border: none;
+    color: #0c1311;
+    padding-top: 1.5em;
+    text-align: center;
+    line-height: 1em;
+    border-radius: 100em;
+    width: 15em;
+}
+
+.buttons-freeform:hover {
+    background-color: #2b4f20;
+    color: #e1ecde;
+}
+
+.grid-main-footer{
+    grid-column: 1/4;
+    grid-row: 3;
+    color: #0c1311;
+    background-color: #a3c899;
+    text-align: center;
+    line-height: 2em;
+
+}
+.about-body{
+    background-image: url("../assets/images/homepage-bg.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-footer{
+    color: #0c1311;
+    background-color: #a3c899;
+    text-align: center;
+    line-height: 2em;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .grid-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 5fr 0.5fr;
+        width: auto;
+    }
+    .grid-main-header{
+        grid-column: 1/2;
+        grid-row:1;
+        width: auto;
+
+    }
+    .grid-main-body{
+        grid-column: 1/2;
+        grid-row: 2;
+        width: auto;
+    }
+    .grid-main-footer{
+        grid-column: 1/2;
+        grid-row: 3;
+        width: auto;
+    }
+    .grid-main-body > form {
+        width: auto;
+    
+    }
+    #loginForm{
+        grid-row: 2;                /*do not touch, grid-row = it's the cell itself. grid-template-column is the "children" of the cell*/
+        grid-column: 2;
+        display: grid;
+        grid-gap: 0.1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5em 4em 4em 6em 4em 0em;
+        width: auto;
+    }
+    #title{
+        font-size: 4em;
+    }
+    #subtitle{
+        font-size: 1.5em;
+    }
+    
+}
